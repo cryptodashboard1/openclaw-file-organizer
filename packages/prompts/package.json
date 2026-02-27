@@ -1,0 +1,10 @@
+{
+  "name": "@ao/prompts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node -e \"console.log('prompts package: no build step')\"",
+    "typecheck": "node -e \"console.log('prompts package: no typecheck step')\""
+  }
+}
