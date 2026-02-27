@@ -1,0 +1,245 @@
+:root {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  background: #eef4fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topbar {
+  background: #f8fbff;
+  border: 1px solid #d5dfec;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.topbar h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+}
+
+.topbar p {
+  margin: 0;
+  color: #4d5a74;
+}
+
+.chip-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  border: 1px solid #cfd9e6;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #3b4660;
+}
+
+.tabs {
+  margin: 14px 0;
+  display: flex;
+  gap: 8px;
+}
+
+.tabs button {
+  border: 1px solid #cfd9e6;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #0f5fad;
+  color: #ffffff;
+  border-color: #0f5fad;
+}
+
+.notice,
+.error {
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 12px 0;
+}
+
+.notice {
+  background: #e7f8ef;
+  border: 1px solid #9dd8b2;
+  color: #0f5132;
+}
+
+.error {
+  background: #ffeded;
+  border: 1px solid #ef9d9d;
+  color: #7b1f1f;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+}
+
+.grid.two-col {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1100px) {
+  .grid.two-col {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+}
+
+.card {
+  border: 1px solid #d5dfec;
+  background: #f8fbff;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.row.between {
+  justify-content: space-between;
+}
+
+.form-row {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0;
+}
+
+label {
+  font-size: 13px;
+  color: #405070;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #c8d4e4;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: #ffffff;
+}
+
+button {
+  border: 1px solid #c8d4e4;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0f6ff;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.stat-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.summary-block {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.proposal-card {
+  border: 1px solid #d6e1ee;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.proposal-card p {
+  margin: 6px 0;
+}
+
+.muted {
+  color: #5d6c8a;
+}
+
+.small {
+  font-size: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e4eaf2;
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr.selected {
+  background: #e7f1ff;
+}
+
+.danger {
+  color: #8b1f1f;
+  border-color: #e0b0b0;
+}

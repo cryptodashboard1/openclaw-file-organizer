@@ -1,0 +1,26 @@
+{
+  "name": "@ao/local-daemon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@ao/common": "workspace:*",
+    "@ao/contracts": "workspace:*",
+    "better-sqlite3": "^11.10.0",
+    "fastify": "^5.2.1",
+    "mime-types": "^2.1.35",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
