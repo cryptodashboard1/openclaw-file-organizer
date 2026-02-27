@@ -1,0 +1,19 @@
+[Unit]
+Description=Auto-Organizer Control API
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/auto-organizer-agent
+Environment=NODE_ENV=production
+Environment=HOST=0.0.0.0
+Environment=PORT=4040
+Environment=AO_CONTROL_API_SERVICE_TOKEN=change-me
+ExecStart=/usr/bin/node /opt/auto-organizer-agent/apps/vps-control-api/dist/server.js
+Restart=always
+RestartSec=3
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

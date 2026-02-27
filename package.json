@@ -1,0 +1,22 @@
+{
+  "name": "auto-organizer-agent",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:vps": "pnpm --filter @ao/vps-control-api dev",
+    "dev:daemon": "pnpm --filter @ao/local-daemon dev",
+    "dev:desktop": "pnpm --filter @ao/local-desktop dev",
+    "dev:desktop:tauri": "pnpm --filter @ao/local-desktop tauri:dev",
+    "release:vps": "powershell -ExecutionPolicy Bypass -File ./scripts/release/build-vps-bundle.ps1",
+    "release:all": "powershell -ExecutionPolicy Bypass -File ./scripts/release/build-all.ps1",
+    "verify:git-safe": "powershell -ExecutionPolicy Bypass -File ./scripts/release/verify-git-safe.ps1",
+    "typecheck": "pnpm -r typecheck",
+    "smoke:scaffold": "node ./scripts/scaffold-smoke.mjs",
+    "smoke:local-e2e": "pnpm -r build && node ./scripts/smoke-with-services.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
