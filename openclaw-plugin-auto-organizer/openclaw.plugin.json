@@ -1,0 +1,11 @@
+{
+  "id": "auto-organizer",
+  "name": "Auto Organizer Tools",
+  "description": "Registers ao_* tools that bridge OpenClaw to Auto-Organizer Control API.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
